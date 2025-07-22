@@ -1,0 +1,11 @@
+
+#This program draws a Turning Turtle 
+import turtle 
+
+sam = turtle.Turtle()
+for i in range(5):
+
+    n = int(input("Enter a number: "))
+
+    sam.left(n)
+    sam.forward(100)
