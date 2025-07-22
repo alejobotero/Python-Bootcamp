@@ -1,0 +1,15 @@
+
+#This program prints a borough graph
+import matplotlib.pyplot as plt 
+import pandas as pd
+
+pop = pd.read_csv('nycHistPop.csv',skiprows=5)
+uInput=input("Enter Borough name:") 
+out=input("Enter output name:") 
+
+pop['Fraction'] = pop[uInput]/pop['Total']
+
+pop.plot(x = 'Year', y = 'Fraction')
+plt.show()
+fig = plt.gcf()
+fig.savefig(out)
