@@ -1,0 +1,8 @@
+
+#This program prints ASCII code
+
+r = input('Enter a phrase: ')
+
+for c in r:
+    print(ord(c))
+
