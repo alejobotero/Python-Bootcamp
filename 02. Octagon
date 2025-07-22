@@ -1,6 +1,3 @@
-#Name: Alejandro Botero
-#Email: alejandro.botero08@myhunter.cuny.edu
-#Date: June 3, 2022
 #This program draws an octagon.
 import turtle
 bobbyS = turtle.Turtle()
