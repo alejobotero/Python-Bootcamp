@@ -1,0 +1,14 @@
+
+#This program counts plurals
+print("Enter nouns:")
+
+plurals = 0
+nouns = list(input().split())
+words = len(nouns)
+print("Number of words: ", words)
+
+for i in nouns:
+    if i[- 1] == 's':
+        plurals = plurals + 1
+print("Fraction of your list that is plural is ", plurals / words)
+
