@@ -1,0 +1,11 @@
+
+#This program graphs the shelter census
+import pandas as  pd
+import matplotlib.pyplot as plt
+inpFile=input("Enter name of input file:")
+outFile=input("Enter name of output file:")
+pop = pd.read_csv(inpFile)
+pop['Fraction Children']=pop['Total Children in Shelter']/pop['Total Individuals in Shelter']
+pop.plot(x="Date of Census",y="Fraction Children")
+plt.show()
+plt.savefig(outFile)
