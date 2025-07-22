@@ -1,0 +1,6 @@
+#This program prints: 'I love Python!' 25 times
+r = "I love Python!"
+
+for i in range(25):
+    e = r
+    print(e)
