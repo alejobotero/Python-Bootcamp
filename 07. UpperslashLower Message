@@ -1,0 +1,11 @@
+
+#This program prints a prompt, a message, an upper and lower case message
+mess1 = input ("Enter a message: ")
+print("Mihi cura futuri", mess1)
+print("Mihi cura futuri", mess1.upper())
+print("Mihi cura futuri", mess1.lower())
+
+mess2 = input ("Enter a message: ")
+print("I love Python!", mess2)
+print("I love Python!", mess2.upper())
+print("I love Python!", mess2.lower())
