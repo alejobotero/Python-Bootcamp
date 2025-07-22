@@ -1,0 +1,14 @@
+
+#This program prints words using cipher code
+
+shifts = ord('n') - ord('a')
+w = input('Enter a word: ')
+cipher = ''
+start, last = ord('a'), ord('z')
+for char in w:
+    val = ord(char) - start + 1
+    newV = (val + shifts) % 26
+    newV = newV + start -1
+    char = chr(newV)
+    cipher += char
+print('Your word in code is:', cipher)
