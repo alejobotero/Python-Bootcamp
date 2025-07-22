@@ -1,0 +1,12 @@
+
+#This program prints a turtle on a random walk
+import turtle
+import random
+
+pat = turtle.Turtle()
+pat.speed(10)
+
+for i in range(100):
+  pat.forward(10)
+  x = random.randrange(0,360)
+  pat.right(x)
