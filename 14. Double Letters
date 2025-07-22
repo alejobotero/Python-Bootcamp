@@ -1,0 +1,5 @@
+
+#This program prints two copies of message
+mesg = input("Enter a message: ")
+for i in mesg:
+    print(i,i)
