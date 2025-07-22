@@ -1,0 +1,9 @@
+#Name: Alejandro Botero
+#Email: alejandro.botero08@myhunter.cuny.edu
+#Date: June 3, 2022
+#This program draws an octagon.
+import turtle
+bobbyS = turtle.Turtle()
+for i in range(8):
+     bobbyS.forward(150)
+     bobbyS.left(45)
