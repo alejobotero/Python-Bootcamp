@@ -1,0 +1,11 @@
+
+#This program prints greetings by the hour
+import pandas as pd
+
+csvfile = input('Enter file name: ')
+c = input("Enter attribute: ")
+tickets = pd.read_csv(csvfile) 
+
+
+print("The 10 worst offenders are:")
+print(tickets[c].value_counts()[:10]) 
