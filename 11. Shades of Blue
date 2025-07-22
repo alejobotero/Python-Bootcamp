@@ -1,0 +1,13 @@
+
+#This program demonstrates the shades of blue
+import turtle
+
+turtle.colormode(255)
+tomas = turtle.Turtle()
+tomas.shape("turtle")
+tomas.backward(100)
+
+for t in range(0,255,10):
+    tomas.forward(10)
+    tomas.pensize(t)
+    tomas.color(0,0,t)
