@@ -1,0 +1,36 @@
+#This program prints peak/ off peak fares
+def computeFare(zone, tickeType):
+    f=0
+
+    if tickeType=='peak':
+        if zone==1:
+            f=8.75
+        elif zone==2 or zone==3:
+            f=10.25
+        elif zone==4:
+            f=12
+        elif zone==5 or zone==6 or zone==7:
+            f=13.50
+        elif zone>=8:
+            return -1
+    elif tickeType=='off-peak':
+        if zone==1:
+            fare=6.75
+        elif zone==2 or zone==3:
+            f=7.50
+        elif zone==4:
+            f=8.75
+        elif zone==5 or zone==6 or zone==7:
+            f=9.75
+        elif zone>=8:
+            return -1
+
+    return (f)
+
+def main():
+    x = int(input('Enter the number of zones: '))
+    z = input('Enter the ticket type (peak/off-peak): ').lower()
+    f = computeFare(x, z)
+    print('The fare is', f)
+if __name__ == "__main__":
+    main()
