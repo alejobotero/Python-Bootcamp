@@ -1,0 +1,11 @@
+
+#This program prints borough stats
+import pandas as pd
+import numpy as np
+pop = pd.read_csv('nycHistPop.csv',skiprows=5) 
+b = input("Enter borough: ") 
+maxP = np.max(pop[b]) 
+avgP = np.mean(pop[b]) 
+
+print("Maximum popluation:", maxP)
+print("Average popluation:", avgP)
