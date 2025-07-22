@@ -1,0 +1,16 @@
+
+#This program prints a pseudocode
+print("Enter string: ")
+
+s = input()
+
+l = len(s)
+for q in range(0, l):
+
+    print(s[0: q])
+
+for q in range(0, l):
+    print(s[q: l])
+
+print("Thank you for using my program!")
+ 
