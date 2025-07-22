@@ -1,0 +1,8 @@
+
+import pandas as pd 
+name = input("Enter CSV file name: ") 
+file = pd.read_csv(name)
+print("Top three contributing factors for collisions: ")
+top3 = (file['CONTRIBUTING FACTOR VEHICLE 1'].value_counts()[:3])
+
+print(top3)
