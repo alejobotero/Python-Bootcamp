@@ -1,0 +1,9 @@
+
+#This program converts Km to Miles
+kilometers = float(input("Enter value in kilometers: "))
+
+fac = 0.621371
+
+miles = kilometers * fac
+
+print("The miles are", miles)
