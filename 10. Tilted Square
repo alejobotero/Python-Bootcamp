@@ -1,0 +1,9 @@
+
+#This program draws a tilted square
+import turtle
+
+quest=turtle.Turtle()
+for i in range(5,305,5):
+    quest.forward(i)
+    quest.left(91)
+turtle.done()
