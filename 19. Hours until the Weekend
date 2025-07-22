@@ -1,0 +1,11 @@
+
+#This program prints Hours until the Weekend
+hrs = int(input("Enter number of hours:"))
+
+days = int(hrs / 24)
+
+remaininghrs = hrs % 24
+
+print("Days:",days)
+
+print("Hours:",remaininghrs)
