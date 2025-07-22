@@ -1,0 +1,12 @@
+
+#This program runs strings
+while True:
+
+    qr =input('Enter a non-empty string: ')
+
+    if qr:
+        print('You entered: %s' % qr)
+
+        break
+    else:
+        print('That was empty. Try again.')
