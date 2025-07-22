@@ -1,0 +1,9 @@
+
+#This program displays a purple turtle
+import turtle
+
+color = input("Enter a hex string:  ")
+
+yolanda = turtle.Turtle()
+yolanda.shape("turtle")
+yolanda.color(color)
