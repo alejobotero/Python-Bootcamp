@@ -1,0 +1,10 @@
+import turtle
+bobbyT = turtle.Turtle()
+for i in range(36):
+     bobbyT.forward(100)
+     bobbyT.left(145)
+     bobbyT.forward(10)
+     bobbyT.right(90)
+     bobbyT.forward(10)
+     bobbyT.left(135)
+     bobbyT.forward(100)
